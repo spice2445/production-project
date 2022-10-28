@@ -1,13 +1,13 @@
-import {render} from "react-dom";
-import App from "./App";
-import {BrowserRouter} from "react-router-dom";
-import ThemeProvider from "./theme/ThemeProvider";
+import { render } from 'react-dom';
+import App from 'app';
+
+import { ThemeProvider } from 'app/providers/with-theme';
+
+import 'shared/config/i18n';
 
 render(
-    <BrowserRouter>
-        <ThemeProvider>
-            <App />
-        </ThemeProvider>
-    </BrowserRouter>,
-    document.getElementById('root')
-)
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+);
