@@ -22,9 +22,9 @@ export const Sidebar = ({ className }: SidebarProps): JSX.Element => {
     <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
       <button type='button' onClick={onToggle}>{t('Переключить')}</button>
 
-      <div className={cls.switchers}>
+      <div className={collapsed ? cls.switchersCollapsed : cls.switchers}>
         <ToggleTheme />
-        <ToggleLanguage className={cls.lang} />
+        <ToggleLanguage className={collapsed ? cls.center : cls.marginLeft} />
       </div>
     </div>
   );
