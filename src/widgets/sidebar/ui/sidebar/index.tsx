@@ -6,6 +6,8 @@ import { ToggleTheme } from 'features/toggle-theme';
 import { ToggleLanguage } from 'features/toggle-language';
 import { useTranslation } from 'react-i18next';
 
+import { Button } from 'shared/ui/button';
+
 import cls from './style.module.scss';
 
 interface SidebarProps {
@@ -19,8 +21,8 @@ export const Sidebar = ({ className }: SidebarProps): JSX.Element => {
   const onToggle = () => setCollapsed((prev) => !prev);
 
   return (
-    <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-      <button type='button' onClick={onToggle}>{t('Переключить')}</button>
+    <div data-testid='sidebar' className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
+      <Button data-testid='sidebar-toggle' type='button' onClick={onToggle}>{t('Переключить')}</Button>
 
       <div className={collapsed ? cls.switchersCollapsed : cls.switchers}>
         <ToggleTheme />
