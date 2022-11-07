@@ -14,7 +14,7 @@ export const Navbar = ({ className }: NavbarProps): JSX.Element => {
     <div data-testid='navbar' className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.links}>
         <CustomLink theme={CustomLinkTheme.SECONDARY} className={cls.mainLink} to='/'>{t('Главная')}</CustomLink>
-        <CustomLink theme={CustomLinkTheme.RED} to='/about'>{t('О сайте')}</CustomLink>
+        <CustomLink theme={CustomLinkTheme.TERTIARY} to='/about'>{t('О сайте')}</CustomLink>
       </div>
     </div>
   );

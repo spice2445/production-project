@@ -31,10 +31,10 @@ Secondary.args = {
   theme: CustomLinkTheme.SECONDARY
 };
 
-export const Red = Template.bind({});
-Red.args = {
+export const Tertiary = Template.bind({});
+Tertiary.args = {
   children: 'Text',
-  theme: CustomLinkTheme.RED
+  theme: CustomLinkTheme.TERTIARY
 };
 
 export const PrimaryDark = Template.bind({});
@@ -51,9 +51,9 @@ SecondaryDark.args = {
 };
 SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const RedDark = Template.bind({});
-RedDark.args = {
+export const TertiaryDark = Template.bind({});
+TertiaryDark.args = {
   children: 'Text',
-  theme: CustomLinkTheme.RED
+  theme: CustomLinkTheme.TERTIARY
 };
-RedDark.decorators = [ThemeDecorator(Theme.DARK)];
+TertiaryDark.decorators = [ThemeDecorator(Theme.DARK)];

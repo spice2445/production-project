@@ -19,9 +19,9 @@ describe('custom link', () => {
     expect(screen.getByText('TEST')).toHaveClass('secondary');
     screen.debug();
   });
-  test('test red theme', () => {
-    renderWithRouter(<CustomLink to='/' theme={CustomLinkTheme.RED}>TEST</CustomLink>);
-    expect(screen.getByText('TEST')).toHaveClass('red');
+  test('test tertiary theme', () => {
+    renderWithRouter(<CustomLink to='/' theme={CustomLinkTheme.TERTIARY}>TEST</CustomLink>);
+    expect(screen.getByText('TEST')).toHaveClass('tertiary');
     screen.debug();
   });
 });
