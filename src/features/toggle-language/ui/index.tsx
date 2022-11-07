@@ -18,7 +18,7 @@ export const ToggleLanguage = ({ className }: ToggleLanguageProps): JSX.Element 
   };
 
   return (
-    <div className={classNames(cls.toggleLanguage, {}, [className])}>
+    <div data-testid='toggle-language' className={classNames(cls.toggleLanguage, {}, [className])}>
       <Button theme={ThemeButton.CLEAR} onClick={toggle}>{t('Язык')}</Button>
     </div>
   );

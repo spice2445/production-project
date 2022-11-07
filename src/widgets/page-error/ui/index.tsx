@@ -18,7 +18,7 @@ export const PageError = ({ className }: PageErrorProps) => {
   const { t } = useTranslation('error-boundary');
 
   return (
-    <div className={classNames(cls.PageError, {}, [className])}>
+    <div data-testid='page-error' className={classNames(cls.PageError, {}, [className])}>
       <p>{t('Что-то пошло не так')}</p>
       <Button onClick={reloadPage}>{t('Обновить страницу')}</Button>
     </div>

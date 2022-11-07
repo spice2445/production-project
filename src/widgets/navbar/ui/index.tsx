@@ -11,7 +11,7 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps): JSX.Element => {
   const { t } = useTranslation();
   return (
-    <div className={classNames(cls.navbar, {}, [className])}>
+    <div data-testid='navbar' className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.links}>
         <CustomLink theme={CustomLinkTheme.SECONDARY} className={cls.mainLink} to='/'>{t('Главная')}</CustomLink>
         <CustomLink theme={CustomLinkTheme.RED} to='/about'>{t('О сайте')}</CustomLink>

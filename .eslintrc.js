@@ -51,7 +51,8 @@ module.exports = {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
       'newlines-between': 'always-and-inside-groups'
     }],
-    'i18next/no-literal-string': ['error', { markupOnly: true }]
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'linebreak-style': 0
   },
   globals: {
     __IS_DEV__: true,

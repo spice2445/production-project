@@ -18,6 +18,7 @@ export const ToggleTheme = ({ className }: ToggleThemeProps): JSX.Element => {
 
   return (
     <Button
+      data-testid='toggle-theme'
       theme={ThemeButton.CLEAR}
       onClick={toggleTheme}
       className={classNames(cls.toggleTheme, {}, [className])}
