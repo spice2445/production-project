@@ -9,7 +9,7 @@ import cls from './style.module.scss';
 export enum CustomLinkTheme {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
-  RED = 'buttonRed'
+  RED = 'tertiary'
 }
 
 interface CustomLinkProps extends LinkProps {

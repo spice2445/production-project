@@ -40,6 +40,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
+    'color-named': 'off',
     semi: ['warn', 'always'],
     'no-console': 'warn',
     quotes: ['error', 'single'],

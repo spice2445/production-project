@@ -125,4 +125,7 @@
   transform: translateZ(0) scale(1);
   transform-origin: 0 0; /* see note above */
 }
-.spinnerWrapper div { box-sizing: content-box; }
+
+.spinnerWrapper div {
+  box-sizing: content-box;
+}
