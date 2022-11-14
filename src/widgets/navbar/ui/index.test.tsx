@@ -1,11 +1,11 @@
 import { screen } from '@testing-library/react';
-import { renderWithRouterTranslations } from 'shared/lib/tests/render-withRouter-Translations';
+import { componentRender } from 'shared/config/jest/with-component';
 
 import { Navbar } from '.';
 
 describe('Navbar', () => {
   test('test render', () => {
-    renderWithRouterTranslations(<Navbar />);
+    componentRender(<Navbar />);
     expect(screen.getByTestId('navbar')).toBeInTheDocument();
   });
 });

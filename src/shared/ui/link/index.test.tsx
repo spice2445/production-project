@@ -1,26 +1,26 @@
 import { screen } from '@testing-library/react';
-import { renderWithRouter } from 'shared/lib/tests/render-withRouter';
+import { componentRender } from 'shared/config/jest/with-component';
 
 import { CustomLink, CustomLinkTheme } from '.';
 
 describe('custom link', () => {
   test('default class', () => {
-    renderWithRouter(<CustomLink to='/'>TEST</CustomLink>);
+    componentRender(<CustomLink to='/'>TEST</CustomLink>);
     expect(screen.getByText('TEST')).toHaveClass('primary');
     screen.debug();
   });
   test('test primary theme', () => {
-    renderWithRouter(<CustomLink to='/' theme={CustomLinkTheme.PRIMARY}>TEST</CustomLink>);
+    componentRender(<CustomLink to='/' theme={CustomLinkTheme.PRIMARY}>TEST</CustomLink>);
     expect(screen.getByText('TEST')).toHaveClass('primary');
     screen.debug();
   });
   test('test secondary theme', () => {
-    renderWithRouter(<CustomLink to='/' theme={CustomLinkTheme.SECONDARY}>TEST</CustomLink>);
+    componentRender(<CustomLink to='/' theme={CustomLinkTheme.SECONDARY}>TEST</CustomLink>);
     expect(screen.getByText('TEST')).toHaveClass('secondary');
     screen.debug();
   });
   test('test tertiary theme', () => {
-    renderWithRouter(<CustomLink to='/' theme={CustomLinkTheme.TERTIARY}>TEST</CustomLink>);
+    componentRender(<CustomLink to='/' theme={CustomLinkTheme.TERTIARY}>TEST</CustomLink>);
     expect(screen.getByText('TEST')).toHaveClass('tertiary');
     screen.debug();
   });

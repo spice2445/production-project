@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import { renderWithTranslation } from 'shared/lib/tests/render-withTranslations';
+import { renderWithTranslation } from 'shared/config/jest/with-translations';
 
 import { ToggleTheme } from '.';
 
